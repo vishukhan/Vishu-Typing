@@ -644,7 +644,7 @@
             async login() {
                 const id = document.getElementById('login-id').value.trim();
                 const pass = document.getElementById('login-pass').value.trim();
-                if (id === "Vishu7860" && pass === "7419130272") return this.showAdmin();
+              
                 try {
                     const doc = await db.collection("users").doc(id).get();
                     if (doc.exists) {
