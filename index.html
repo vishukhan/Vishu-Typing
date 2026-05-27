@@ -45,7 +45,7 @@
 
         .main-header {
             background: var(--white);
-            padding: 20px;
+            padding: 10px;
             display: flex;
             justify-content: center;
             border-bottom: 1px solid #e2e8f0;
@@ -535,7 +535,7 @@
         <div id="payment-modal" class="modal">
             <div class="modal-content">
                 <h3>Finalize Payment</h3>
-                <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=upi://pay?pa=8307803553@okbizaxis%26pn=Vishal%26am=20" id="qr-img" style="border: 4px solid #f1f5f9; border-radius:12px; margin-bottom:15px;">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=upi://pay?pa=vishalkhan@fam%26pn=Vishal%26am=20" id="qr-img" style="border: 4px solid #f1f5f9; border-radius:12px; margin-bottom:15px;">
                 <p style="font-size:0.8rem; color:var(--text-muted);">Please pay the amount and enter UTR below.</p>
                 <input type="text" id="pay-utr" placeholder="Enter Transaction UTR (12 Digits)">
                 <input type="date" id="pay-date">
@@ -673,7 +673,7 @@
     this.selectedPrice = price; // Price ko save karein
 
     // QR Code ko dynamic banane ka logic
-    const upiID = "8307803553@okbizaxis";
+    const upiID = "vishalkhan@fam";
     const name = "Vishal";
     
     // Naya QR URL jisme 'am' (amount) parameter dynamic hai
